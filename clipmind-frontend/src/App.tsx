@@ -15,7 +15,7 @@ function App() {
     setSummary('');
 
     try {
-      const res = await axios.post('http://localhost:5000/summarize', { url });
+      const res = await axios.post('http://127.0.0.1:5000/summarize', { url });
       setSummary(res.data.summary);
     } catch (err) {
       console.error(err);
